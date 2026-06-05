@@ -1,0 +1,25 @@
+{
+  "name": "runway",
+  "owner": {
+    "name": "Chad Schulz",
+    "email": "chad.awesome@gmail.com"
+  },
+  "metadata": {
+    "description": "Claude Code workflow skills",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "runway",
+      "source": "./",
+      "description": "Backlog and release workflow skills for Claude Code projects.",
+      "skills": [
+        "./skills/add-to-backlog",
+        "./skills/bootstrap-backlog",
+        "./skills/bootstrap-changelog",
+        "./skills/ship-from-backlog"
+      ],
+      "tags": ["backlog", "release", "project-management"]
+    }
+  ]
+}
