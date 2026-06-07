@@ -13,6 +13,8 @@ metadata:
 
 If what's shipping isn't clear from context, ask in one sentence before proceeding.
 
+When invoked without any parameters or details, start by scanning BACKLOG.md for items that have already been completed (e.g. the work landed in a recent commit but the entry was never removed). Use that completed item as the thing to ship: remove it from BACKLOG.md and record it in CHANGELOG.md as part of the steps below.
+
 Before starting the automated branch/commit/push/PR sequence, ask the user whether they want to test, validate, or fix anything first, or are ready to proceed now. Wait for their answer — do not start the steps below until they confirm they're ready.
 
 **Steps — run in order, do not skip:**

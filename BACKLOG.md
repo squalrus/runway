@@ -19,9 +19,7 @@ Tracks future features, improvements, and known bugs. Items here are not committ
 
 ### Features
 
-| Title                                   | Effort | Value |
-| --------------------------------------- | ------ | ----- |
-| [Add skill PR opening](#add-skill-pr-opening) | M      | H     |
+No open feature items.
 
 ### Improvements
 
@@ -34,15 +32,3 @@ No open known issues.
 ### Limitations
 
 No open limitations.
-
----
-
-## Open
-
-### Add skill PR opening
-
-**Type:** Feature
-
-**Why** — Skills need the ability to open pull requests programmatically, enabling automated workflows and improved user experience.
-
-**Notes:** Investigate dependencies on GitHub API integration, authentication mechanisms, and PR template handling. Clarify what data/context the skill needs from the user before opening a PR.
