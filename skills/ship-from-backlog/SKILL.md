@@ -1,11 +1,19 @@
 ---
 name: ship-from-backlog
-description: Ship a backlog item — create a version branch, write the changelog entry, bump the version, build, commit, and push. Use when the user signals readiness to release: "ready to commit", "ship this", "let's push", "time to release", "I'm done with X".
+description: Ship a backlog item — create a version branch, write the changelog entry, bump the version, build, commit, and push. Use when the user signals readiness to release -  "ready to commit", "ship this", "let's push", "time to release", "I'm done with X".
 when_to_use: ready to commit, ship this, push it, time to release, let's release, done with, commit and push, ship it, release this, I'm done
 model: haiku
+metadata:
+  dependencies:
+    - name: GitHub CLI
+      command: gh
+      install: https://cli.github.com
+      reason: opens pull requests via `gh pr create`
 ---
 
 If what's shipping isn't clear from context, ask in one sentence before proceeding.
+
+Before starting the automated branch/commit/push/PR sequence, ask the user whether they want to test, validate, or fix anything first, or are ready to proceed now. Wait for their answer — do not start the steps below until they confirm they're ready.
 
 **Steps — run in order, do not skip:**
 
@@ -41,4 +49,4 @@ If what's shipping isn't clear from context, ask in one sentence before proceedi
 
 9. Stage all changed files. Commit: `git commit -m "vX.Y.Z — short description"`
 
-10. `git push -u origin vX.Y.Z` — **stop here. Do not open a PR.**
+10. `git push -u origin vX.Y.Z`. Then run `gh --version` to check whether GitHub CLI is installed. If the command fails, inform the user that opening a PR requires GitHub CLI (https://cli.github.com) and stop here. If available, run `gh pr create --base main --fill` to open the pull request.

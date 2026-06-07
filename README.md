@@ -6,6 +6,7 @@ Workflow management skills for Claude Code. Runway gives you a structured backlo
 
 ```
 /plugin marketplace add squalrus/runway
+/plugin install runway@runway
 ```
 
 ## Skills

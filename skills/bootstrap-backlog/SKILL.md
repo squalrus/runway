@@ -20,7 +20,7 @@ Tracks future features, improvements, and known bugs. Items here are not committ
 4. Pick the version by semver: feature → minor; bug / improvement / cleanup → patch; breaking → major.
 5. Bump the version in whichever location CLAUDE.md documents (package.json, VERSION file, or CHANGELOG.md only).
 6. Run the build as the correctness gate.
-7. Commit and push the branch. Do not open a PR.
+7. Commit and push the branch, then open a PR with `gh pr create`. Requires [GitHub CLI](https://cli.github.com) installed and authenticated (`gh auth login`).
 
 ## Suggested execution order
 
@@ -59,7 +59,7 @@ Then check CLAUDE.md:
 
 [BACKLOG.md](./BACKLOG.md) tracks proposed work. Items are candidates, not commitments.
 
-When shipping a backlog item: branch off `main` as `vX.Y.Z`, move the entry to CHANGELOG.md, bump `version` in package.json, build, commit, push. Do not open a PR.
+When shipping a backlog item: branch off `main` as `vX.Y.Z`, move the entry to CHANGELOG.md, bump `version` in package.json, build, commit, push, then open a PR with `gh pr create`. Requires [GitHub CLI](https://cli.github.com) installed and authenticated (`gh auth login`).
 ```
 
 - If it exists but has no reference to BACKLOG.md, append:
@@ -69,7 +69,7 @@ When shipping a backlog item: branch off `main` as `vX.Y.Z`, move the entry to C
 
 [BACKLOG.md](./BACKLOG.md) tracks proposed work. Items are candidates, not commitments.
 
-When shipping a backlog item: branch off `main` as `vX.Y.Z`, move the entry to CHANGELOG.md, bump `version` in package.json, build, commit, push. Do not open a PR.
+When shipping a backlog item: branch off `main` as `vX.Y.Z`, move the entry to CHANGELOG.md, bump `version` in package.json, build, commit, push, then open a PR with `gh pr create`. Requires [GitHub CLI](https://cli.github.com) installed and authenticated (`gh auth login`).
 ```
 
 Report which files were created or updated, then return to the caller.
