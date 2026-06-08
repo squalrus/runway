@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Claude Code workflow skills",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -17,6 +17,7 @@
         "./skills/add-to-backlog",
         "./skills/bootstrap-backlog",
         "./skills/bootstrap-changelog",
+        "./skills/pick-from-backlog",
         "./skills/ship-from-backlog"
       ],
       "tags": ["backlog", "release", "project-management"]
