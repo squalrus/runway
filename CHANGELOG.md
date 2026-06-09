@@ -2,6 +2,12 @@
 
 User-visible changes, newest first. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format and [semver](https://semver.org/) versioning.
 
+## [1.2.1] — 2026-06-08
+
+### Changed
+
+- **README skill descriptions.** Rewrote the skill table descriptions and workflow steps for clarity — each entry now surfaces what Claude does (classifies, ranks, briefs) rather than just naming the action. (`README.md`)
+
 ## [1.2.0] — 2026-06-07
 
 ### Added

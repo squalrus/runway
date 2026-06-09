@@ -13,14 +13,14 @@ Workflow management skills for Claude Code. Runway gives you a structured backlo
 
 | Skill | Command | Description |
 | --- | --- | --- |
-| [add-to-backlog](skills/add-to-backlog/SKILL.md) | `/add-to-backlog` | Add a feature, bug, or idea to BACKLOG.md with automatic classification and sorting |
-| [pick-from-backlog](skills/pick-from-backlog/SKILL.md) | `/pick-from-backlog` | Pick an item (or items) from BACKLOG.md, brief on its scope, and start implementing |
+| [add-to-backlog](skills/add-to-backlog/SKILL.md) | `/add-to-backlog` | Capture a feature, bug, or idea in plain English — classified by type, effort, and value, written into `BACKLOG.md` |
+| [pick-from-backlog](skills/pick-from-backlog/SKILL.md) | `/pick-from-backlog` | Surface candidates from `BACKLOG.md`, brief on scope and why, and start implementing |
 | [ship-from-backlog](skills/ship-from-backlog/SKILL.md) | `/ship-from-backlog` | Ship a backlog item — version branch, changelog entry, version bump, build, commit, push |
 
 ## Workflow
 
-1. Capture work with `/add-to-backlog` — Claude classifies by type, effort, and value, then writes it into `BACKLOG.md`.
-2. When ready to start, run `/pick-from-backlog` — Claude surfaces candidates, briefs you on the chosen item's scope, and begins implementing.
-3. When ready to release, run `/ship-from-backlog` — Claude creates a version branch, writes the changelog entry, bumps the version, runs the build, commits, and pushes.
+1. **Capture** with `/add-to-backlog` — describe the work in plain English. Claude classifies by type, effort, and value, pulls relevant code context, and writes a structured entry into `BACKLOG.md`.
+2. **Pick** with `/pick-from-backlog` — Claude surfaces candidates ranked by the backlog's own ordering, briefs you on the chosen item's scope and motivation, then starts the implementation.
+3. **Ship** with `/ship-from-backlog` — Claude creates a version branch, writes the changelog entry, bumps the version, runs the build, commits, and pushes.
 
 First run of each skill bootstraps the files it needs (`BACKLOG.md`, `CHANGELOG.md`, `CLAUDE.md`) automatically.
